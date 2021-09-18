@@ -1,0 +1,48 @@
+{
+  "name": "datoit-generate-controller",
+  "version": "0.0.1",
+  "description": "Generate a controller for a Datoit API.",
+  "homepage": "https://strapi.io",
+  "keywords": [
+    "controller",
+    "generate",
+    "generator",
+    "datoit"
+  ],
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "lodash": "4.17.21",
+    "datoit-utils": "0.0.2"
+  },
+  "scripts": {
+    "test": "echo \"no tests yet\""
+  },
+  "author": {
+    "email": "win@datoit.com",
+    "name": "Datoit team",
+    "url": "https://datoit.com"
+  },
+  "maintainers": [
+    {
+      "email": "win@datoit.com",
+      "name": "Datoit team",
+      "url": "https://datoit.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datoit/datoit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/datoit/datoit/issues"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "gitHead": "231263a3535658bab1e9492c6aaaed8692d62a53"
+}

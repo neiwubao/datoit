@@ -1,0 +1,48 @@
+{
+  "name": "datoit-generate-policy",
+  "version": "0.0.2",
+  "description": "Generate a policy for a Datoit API.",
+  "homepage": "https://datoit.com",
+  "keywords": [
+    "generate",
+    "generator",
+    "policy",
+    "datoit"
+  ],
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "dependencies": {
+    "lodash": "4.17.21",
+    "datoit-utils": "0.0.2"
+  },
+  "scripts": {
+    "test": "echo \"no tests yet\""
+  },
+  "author": {
+    "email": "win@datoit.com",
+    "name": "Datoit team",
+    "url": "https://datoit.com"
+  },
+  "maintainers": [
+    {
+      "email": "win@datoit.com",
+      "name": "Datoit team",
+      "url": "https://datoit.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datoit/datoit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/datoit/datoit/issues"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "gitHead": "231263a3535658bab1e9492c6aaaed8692d62a53"
+}

@@ -1,0 +1,49 @@
+{
+  "name": "datoit-utils",
+  "version": "0.0.3",
+  "description": "Shared utilities for the Datoit packages",
+  "homepage": "https://datoit.com",
+  "keywords": [
+    "datoit",
+    "utilities",
+    "utils",
+    "winston"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib",
+  "dependencies": {
+    "@sindresorhus/slugify": "1.1.0",
+    "date-fns": "^2.19.0",
+    "lodash": "4.17.21",
+    "pino": "^4.7.1",
+    "pluralize": "^8.0.0",
+    "yup": "^0.32.9"
+  },
+  "author": {
+    "email": "win@datoit.com",
+    "name": "Datoit team",
+    "url": "https://datoit.com"
+  },
+  "maintainers": [
+    {
+      "name": "Datoit team",
+      "email": "win@datoit.com",
+      "url": "https://datoit.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datoit/datoit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/datoit/datoit/issues"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "gitHead": "231263a3535658bab1e9492c6aaaed8692d62a53"
+}

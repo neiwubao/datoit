@@ -1,0 +1,50 @@
+{
+  "name": "datoit-generate",
+  "version": "0.0.1",
+  "description": "Master of ceremonies for the Datoit generators.",
+  "homepage": "https://datoit.com",
+  "keywords": [
+    "generate",
+    "generator",
+    "datoit"
+  ],
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "test": "echo \"no tests yet\""
+  },
+  "dependencies": {
+    "async": "^2.6.2",
+    "fs-extra": "^9.1.0",
+    "lodash": "4.17.21",
+    "reportback": "^2.0.2",
+    "datoit-utils": "0.0.2"
+  },
+  "author": {
+    "email": "win@datoit.com",
+    "name": "Datoit team",
+    "url": "https://datoit.com"
+  },
+  "maintainers": [
+    {
+      "email": "win@datoit.com",
+      "name": "Datoit team",
+      "url": "https://datoit.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datoit/datoit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/datoit/datoit/issues"
+  },
+  "engines": {
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "gitHead": "231263a3535658bab1e9492c6aaaed8692d62a53"
+}
