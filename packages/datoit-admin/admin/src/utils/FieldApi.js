@@ -1,7 +1,7 @@
 // NOTE TO PLUGINS DEVELOPERS:
 // If you modify this file you also need to update the documentation accordingly
-// Here's the file: strapi/docs/3.0.0-beta.x/plugin-development/frontend-field-api.md
-// Here's the file: strapi/docs/3.0.0-beta.x/guides/registering-a-field-in-admin.md
+// Here's the file: datoit/docs/3.0.0-beta.x/plugin-development/frontend-field-api.md
+// Here's the file: datoit/docs/3.0.0-beta.x/guides/registering-a-field-in-admin.md
 // IF THE DOC IS NOT UPDATED THE PULL REQUEST WILL NOT BE MERGED
 
 import { cloneDeep } from 'lodash';

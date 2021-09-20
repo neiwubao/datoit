@@ -16,7 +16,7 @@ import PropTypes from 'prop-types';
 import { Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators, compose } from 'redux';
-import { LoadingIndicatorPage, auth, request } from 'datoit-helper-plugin';
+import { LoadingIndicatorPage, auth, request } from 'strapi-helper-plugin';
 import { QueryClientProvider, QueryClient } from 'react-query';
 
 import GlobalStyle from '../../components/GlobalStyle';
@@ -82,17 +82,17 @@ function App(props) {
           try {
             const deviceId = await getUID();
 
-            fetch('https://analytics.strapi.io/track', {
-              method: 'POST',
-              body: JSON.stringify({
-                event: 'didInitializeAdministration',
-                uuid,
-                deviceId,
-              }),
-              headers: {
-                'Content-Type': 'application/json',
-              },
-            });
+            // fetch('https://analytics.strapi.io/track', {
+            //   method: 'POST',
+            //   body: JSON.stringify({
+            //     event: 'didInitializeAdministration',
+            //     uuid,
+            //     deviceId,
+            //   }),
+            //   headers: {
+            //     'Content-Type': 'application/json',
+            //   },
+            // });
           } catch (e) {
             // Silent.
           }

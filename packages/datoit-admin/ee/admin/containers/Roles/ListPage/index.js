@@ -13,7 +13,7 @@ import {
   request,
   useUserPermissions,
   LoadingIndicatorPage,
-} from 'datoit-helper-plugin';
+} from 'strapi-helper-plugin';
 import { useIntl } from 'react-intl';
 import adminPermissions from '../../../../../admin/src/permissions';
 import PageTitle from '../../../../../admin/src/components/SettingsPageTitle';

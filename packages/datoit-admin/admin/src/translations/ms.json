@@ -95,7 +95,7 @@
   "app.components.HomePage.welcome": "Selamat datang!",
   "app.components.HomePage.welcome.again": "Selamat datang ",
   "app.components.HomePage.welcomeBlock.content": "Kami mengalu-alukan kedatangan anda di komuniti. Kami sentiasa mencari penambahbaikan, jadi jangan segan silu untuk mesej kami di ",
-  "app.components.HomePage.welcomeBlock.content.again": "Kami harap anda membuat progress pada projek anda... Luangkan masa untuk membaca berita baru kami tentang strapi. Kami memberikan yang terbaik untuk menambah baik produk ini berdasarkan maklum balas anda.",
+  "app.components.HomePage.welcomeBlock.content.again": "Kami harap anda membuat progress pada projek anda... Luangkan masa untuk membaca berita baru kami tentang datoit. Kami memberikan yang terbaik untuk menambah baik produk ini berdasarkan maklum balas anda.",
   "app.components.HomePage.welcomeBlock.content.issues": "isu-isu.",
   "app.components.HomePage.welcomeBlock.content.raise": " atau berikan ",
   "app.components.ImgPreview.hint": "Tarik & Lepas fail anda kedalam kawasan ini atau {browse} fail untuk muat naik",

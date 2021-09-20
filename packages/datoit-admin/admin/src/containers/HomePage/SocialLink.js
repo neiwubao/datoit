@@ -10,7 +10,7 @@ import Gh from '../../assets/images/social_gh.png';
 import Discord from '../../assets/images/social_discord.png';
 import Twitter from '../../assets/images/social_twitter.png';
 import Reddit from '../../assets/images/social_reddit.png';
-import Strapi from '../../assets/images/social_strapi.png';
+import Strapi from '../../assets/images/social_datoit.png';
 
 import { SocialLinkWrapper } from './components';
 

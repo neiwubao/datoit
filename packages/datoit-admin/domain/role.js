@@ -2,7 +2,7 @@
 
 const {
   contentTypes: { hasDraftAndPublish },
-} = require('datoit-utils');
+} = require('strapi-utils');
 const {
   AUTHOR_CODE,
   PUBLISH_ACTION,

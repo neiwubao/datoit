@@ -220,7 +220,7 @@
   "app.components.UpgradePlanModal.text-ce": "Edición de la Comunidad",
   "app.components.UpgradePlanModal.text-ee": "Edición Empresarial",
   "app.components.UpgradePlanModal.text-power": "Desbloquea todo el poder",
-  "app.components.UpgradePlanModal.text-strapi": "de Strapi actualizando su plan al",
+  "app.components.UpgradePlanModal.text-datoit": "de Strapi actualizando su plan al",
   "app.components.Users.MagicLink.connect": "Envíe este enlace al usuario para que se conecte.",
   "app.components.Users.ModalCreateBody.block-title.details": "Detalles",
   "app.components.Users.ModalCreateBody.block-title.roles": "Roles del usuario",

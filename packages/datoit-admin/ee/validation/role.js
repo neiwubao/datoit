@@ -1,6 +1,6 @@
 'use strict';
 
-const { yup, formatYupErrors } = require('datoit-utils');
+const { yup, formatYupErrors } = require('strapi-utils');
 // eslint-disable-next-line node/no-extraneous-require
 const { features } = require('strapi/lib/utils/ee');
 

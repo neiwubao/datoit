@@ -2,7 +2,7 @@
 
 const bcrypt = require('bcryptjs');
 const _ = require('lodash');
-const { getAbsoluteAdminUrl } = require('datoit-utils');
+const { getAbsoluteAdminUrl } = require('strapi-utils');
 
 /**
  * hashes a password

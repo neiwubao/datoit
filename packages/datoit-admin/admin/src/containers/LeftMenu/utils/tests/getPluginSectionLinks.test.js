@@ -1,7 +1,7 @@
-import { hasPermissions } from 'datoit-helper-plugin';
+import { hasPermissions } from 'strapi-helper-plugin';
 import getPluginSectionLinks from '../getPluginSectionLinks';
 
-jest.mock('datoit-helper-plugin');
+jest.mock('strapi-helper-plugin');
 
 describe('getPluginSectionLinks', () => {
   beforeEach(() => {

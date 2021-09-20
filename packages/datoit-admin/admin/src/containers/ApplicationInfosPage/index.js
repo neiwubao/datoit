@@ -4,7 +4,7 @@ import { Flex, Padded, Text } from '@buffetjs/core';
 import { useSelector } from 'react-redux';
 import { createSelector } from 'reselect';
 import { useIntl } from 'react-intl';
-import { BaselineAlignment } from 'datoit-helper-plugin';
+import { BaselineAlignment } from 'strapi-helper-plugin';
 import Bloc from '../../components/Bloc';
 import PageTitle from '../../components/SettingsPageTitle';
 import makeSelectApp from '../App/selectors';
@@ -37,20 +37,9 @@ const ApplicationInfosPage = () => {
       id: 'Settings.application.description',
     }),
   };
-  const pricingLabel = formatMessage({ id: 'Settings.application.link-pricing' });
-  const upgradeLabel = formatMessage({ id: 'Settings.application.link-upgrade' });
-  const strapiVersion = formatMessage({ id: 'Settings.application.strapi-version' });
+  const datoitVersion = formatMessage({ id: 'Settings.application.datoit-version' });
   const nodeVersion = formatMessage({ id: 'Settings.application.node-version' });
   const editionTitle = formatMessage({ id: 'Settings.application.edition-title' });
-
-  /* eslint-disable indent */
-  const upgradeLink = shouldUpdateStrapi
-    ? {
-        label: upgradeLabel,
-        href: `https://github.com/strapi/strapi/releases/tag/${latestStrapiReleaseTag}`,
-      }
-    : null;
-  /* eslint-enable indent */
 
   return (
     <div>
@@ -62,12 +51,10 @@ const ApplicationInfosPage = () => {
           <Padded left right top size="xs">
             <Flex justifyContent="space-between">
               <Detail
-                link={upgradeLink}
-                title={strapiVersion}
+                title={datoitVersion}
                 content={`v${appInfos.strapiVersion}`}
               />
               <Detail
-                link={{ label: pricingLabel, href: 'https://strapi.io/pricing' }}
                 title={editionTitle}
                 content={formatMessage({ id: currentPlan })}
               />

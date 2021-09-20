@@ -1,7 +1,7 @@
-import { request, hasPermissions } from 'datoit-helper-plugin';
+import { request, hasPermissions } from 'strapi-helper-plugin';
 import getCtOrStLinks from '../getCtOrStLinks';
 
-jest.mock('datoit-helper-plugin');
+jest.mock('strapi-helper-plugin');
 
 describe('checkPermissions', () => {
   beforeEach(() => {

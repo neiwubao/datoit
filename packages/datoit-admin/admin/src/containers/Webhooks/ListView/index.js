@@ -18,7 +18,7 @@ import {
   useUserPermissions,
   LoadingIndicatorPage,
   EmptyState,
-} from 'datoit-helper-plugin';
+} from 'strapi-helper-plugin';
 import adminPermissions from '../../../permissions';
 import PageTitle from '../../../components/SettingsPageTitle';
 import { ListRow } from '../../../components/Webhooks';

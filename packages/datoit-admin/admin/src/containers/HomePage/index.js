@@ -7,7 +7,7 @@
 import React, { memo, useMemo } from 'react';
 import { FormattedMessage } from 'react-intl';
 import { get, upperFirst } from 'lodash';
-import { auth, LoadingIndicatorPage } from 'datoit-helper-plugin';
+import { auth, LoadingIndicatorPage } from 'strapi-helper-plugin';
 import PageTitle from '../../components/PageTitle';
 import { useModels } from '../../hooks';
 
@@ -19,7 +19,7 @@ import SocialLink from './SocialLink';
 const FIRST_BLOCK_LINKS = [
   {
     link:
-      'https://strapi.io/documentation/developer-docs/latest/getting-started/quick-start.html#_4-create-a-category-content-type',
+      'https://datoit.io/documentation/developer-docs/latest/getting-started/quick-start.html#_4-create-a-category-content-type',
     contentId: 'app.components.BlockLink.documentation.content',
     titleId: 'app.components.BlockLink.documentation',
   },
@@ -33,11 +33,11 @@ const FIRST_BLOCK_LINKS = [
 const SOCIAL_LINKS = [
   {
     name: 'GitHub',
-    link: 'https://github.com/strapi/strapi/',
+    link: 'https://github.com/datoit/datoit/',
   },
   {
     name: 'Discord',
-    link: 'https://discord.strapi.io/',
+    link: 'https://discord.datoit.io/',
   },
   {
     name: 'Reddit',
@@ -45,19 +45,19 @@ const SOCIAL_LINKS = [
   },
   {
     name: 'Twitter',
-    link: 'https://twitter.com/strapijs',
+    link: 'https://twitter.com/datoitjs',
   },
   {
     name: 'Blog',
-    link: 'https://strapi.io/blog',
+    link: 'https://datoit.io/blog',
   },
   {
     name: 'Forum',
-    link: 'https://forum.strapi.io',
+    link: 'https://forum.datoit.io',
   },
   {
     name: 'Careers',
-    link: 'https://strapi.io/careers',
+    link: 'https://datoit.io/careers',
   },
 ];
 
@@ -93,7 +93,7 @@ const HomePage = ({ history: { push } }) => {
   const linkProps = hasAlreadyCreatedContentTypes
     ? {
         id: 'app.components.HomePage.button.blog',
-        href: 'https://strapi.io/blog/',
+        href: 'https://datoit.io/blog/',
         onClick: () => {},
         type: 'blog',
         target: '_blank',

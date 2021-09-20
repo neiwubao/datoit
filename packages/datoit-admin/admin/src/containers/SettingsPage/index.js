@@ -15,7 +15,7 @@ import {
   useGlobalContext,
   LeftMenuList,
   LoadingIndicatorPage,
-} from 'datoit-helper-plugin';
+} from 'strapi-helper-plugin';
 import { Switch, Redirect, Route, useParams, useHistory } from 'react-router-dom';
 import { useIntl } from 'react-intl';
 import HeaderSearch from '../../components/HeaderSearch';

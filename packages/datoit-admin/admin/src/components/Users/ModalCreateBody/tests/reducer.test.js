@@ -17,7 +17,7 @@ describe('ADMIN | COMPONENTS | USERS | MODALCREATEBODY | reducer', () => {
         modifiedData: {
           firstname: 'kai',
           lastname: '',
-          email: 'kai@strapi.io',
+          email: 'kai@datoit.io',
           roles: [1],
         },
         test: true,
@@ -31,7 +31,7 @@ describe('ADMIN | COMPONENTS | USERS | MODALCREATEBODY | reducer', () => {
         modifiedData: {
           firstname: 'kai',
           lastname: 'doe',
-          email: 'kai@strapi.io',
+          email: 'kai@datoit.io',
           roles: [1],
         },
         test: true,

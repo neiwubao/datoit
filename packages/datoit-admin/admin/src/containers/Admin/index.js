@@ -13,7 +13,7 @@ import { bindActionCreators, compose } from 'redux';
 import { Switch, Route } from 'react-router-dom';
 import { injectIntl } from 'react-intl';
 import { isEmpty } from 'lodash';
-// Components from datoit-helper-plugin
+// Components from strapi-helper-plugin
 import {
   difference,
   GlobalContextProvider,
@@ -21,7 +21,7 @@ import {
   OverlayBlocker,
   CheckPagePermissions,
   request,
-} from 'datoit-helper-plugin';
+} from 'strapi-helper-plugin';
 import { SETTINGS_BASE_URL, SHOW_TUTORIALS, STRAPI_UPDATE_NOTIF } from '../../config';
 import { checkLatestStrapiVersion } from '../../utils';
 
@@ -90,17 +90,17 @@ export class Admin extends React.Component {
     } = this.props;
 
     if (uuid) {
-      try {
-        await axios.post('https://analytics.strapi.io/track', {
-          event,
-          // PROJECT_TYPE is an env variable defined in the webpack config
-          // eslint-disable-next-line no-undef
-          properties: { ...properties, projectType: PROJECT_TYPE },
-          uuid,
-        });
-      } catch (err) {
-        // Silent
-      }
+      // try {
+      //   await axios.post('https://analytics.datoit.io/track', {
+      //     event,
+      //     // PROJECT_TYPE is an env variable defined in the webpack config
+      //     // eslint-disable-next-line no-undef
+      //     properties: { ...properties, projectType: PROJECT_TYPE },
+      //     uuid,
+      //   });
+      // } catch (err) {
+      //   // Silent
+      // }
     }
   };
 

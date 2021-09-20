@@ -7,9 +7,9 @@
 
 // NOTE TO PLUGINS DEVELOPERS:
 // If you modify this file by adding new options to a plugin entry point
-// Here's the file: strapi/docs/3.0.0-beta.x/plugin-development/frontend-field-api.md
-// Here's the file: strapi/docs/3.0.0-beta.x/guides/registering-a-field-in-admin.md
-// Also the strapi-generate-plugins/files/admin/src/index.js needs to be updated
+// Here's the file: datoit/docs/3.0.0-beta.x/plugin-development/frontend-field-api.md
+// Here's the file: datoit/docs/3.0.0-beta.x/guides/registering-a-field-in-admin.md
+// Also the datoit-generate-plugins/files/admin/src/index.js needs to be updated
 // IF THE DOC IS NOT UPDATED THE PULL REQUEST WILL NOT BE MERGED
 
 /* eslint-disable */
@@ -28,7 +28,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 // Strapi provider with the internal APIs
-import { StrapiProvider } from 'datoit-helper-plugin';
+import { StrapiProvider } from 'strapi-helper-plugin';
 import { merge } from 'lodash';
 import Fonts from './components/Fonts';
 import { freezeApp, pluginLoaded, unfreezeApp, updatePlugin } from './containers/App/actions';
@@ -38,7 +38,7 @@ import { showNotification as showNewNotification } from './containers/NewNotific
 import basename from './utils/basename';
 import injectReducer from './utils/injectReducer';
 import injectSaga from './utils/injectSaga';
-import Strapi from './utils/Strapi';
+import Datoit from './utils/Datoit';
 
 // Import root component
 import App from './containers/App';
@@ -55,14 +55,14 @@ import history from './utils/history';
 
 import plugins from './plugins';
 
-const strapi = Strapi();
+const datoit = Datoit();
 
 const pluginsReducers = {};
 const pluginsToLoad = [];
 
 Object.keys(plugins).forEach(current => {
   const registerPlugin = plugin => {
-    strapi.registerPlugin(plugin);
+    datoit.registerPlugin(plugin);
 
     return plugin;
   };
@@ -70,13 +70,13 @@ Object.keys(plugins).forEach(current => {
 
   // By updating this by adding required methods
   // to load a plugin you need to update this file
-  // strapi-generate-plugins/files/admin/src/index.js needs to be updated
+  // datoit-generate-plugins/files/admin/src/index.js needs to be updated
   const plugin = currentPluginFn({
-    registerComponent: strapi.componentApi.registerComponent,
-    registerField: strapi.fieldApi.registerField,
+    registerComponent: datoit.componentApi.registerComponent,
+    registerField: datoit.fieldApi.registerField,
     registerPlugin,
     settingsBaseURL: SETTINGS_BASE_URL || '/settings',
-    middlewares: strapi.middlewares,
+    middlewares: datoit.middlewares,
   });
 
   const pluginTradsPrefixed = languages.reduce((acc, lang) => {
@@ -111,7 +111,7 @@ Object.keys(plugins).forEach(current => {
 });
 
 const initialState = {};
-const store = configureStore(initialState, pluginsReducers, strapi);
+const store = configureStore(initialState, pluginsReducers, datoit);
 const { dispatch } = store;
 
 // Load plugins, this will be removed in the v4, temporary fix until the plugin API
@@ -120,7 +120,7 @@ pluginsToLoad.forEach(plugin => {
   const bootPlugin = plugin.boot;
 
   if (bootPlugin) {
-    bootPlugin(strapi);
+    bootPlugin(datoit);
   }
 
   dispatch(pluginLoaded(plugin));
@@ -139,7 +139,7 @@ const remoteURL = (() => {
 const displayNotification = (message, status) => {
   console.warn(
     // Validate the text
-    'Deprecated: Will be deleted.\nPlease use strapi.notification.toggle(config).\nDocs : https://strapi.io/documentation/developer-docs/latest/development/local-plugins-customization.html#strapi-notification'
+    'Deprecated: Will be deleted.\nPlease use datoit.notification.toggle(config).\nDocs : https://datoit.io/documentation/developer-docs/latest/development/local-plugins-customization.html#strapi-notification'
   );
   dispatch(showNotification(message, status));
 };
@@ -213,7 +213,7 @@ const MOUNT_NODE = document.getElementById('app') || document.createElement('div
 const render = messages => {
   ReactDOM.render(
     <Provider store={store}>
-      <StrapiProvider strapi={strapi}>
+      <StrapiProvider strapi={datoit}>
         <Fonts />
         <LanguageProvider messages={messages}>
           <BrowserRouter basename={basename}>

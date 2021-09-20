@@ -18,7 +18,7 @@ const form = {
   },
   email: {
     label: 'Settings.permissions.users.form.email',
-    placeholder: 'e.g. kai.doe@strapi.io',
+    placeholder: 'e.g. kai.doe@datoit.io',
     type: 'email',
     validations: {
       required: true,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
-import { Carret } from 'datoit-helper-plugin';
+import { Carret } from 'strapi-helper-plugin';
 
 const Button = isOpen => {
   return (

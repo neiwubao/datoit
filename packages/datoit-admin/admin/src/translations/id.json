@@ -219,7 +219,7 @@
   "app.components.UpgradePlanModal.text-ce": "Edisi Komunitas",
   "app.components.UpgradePlanModal.text-ee": "Edisi Perusahaan",
   "app.components.UpgradePlanModal.text-power": "Buka kunci kekuatan penuh",
-  "app.components.UpgradePlanModal.text-strapi": "dari Strapi dengan meningkatkan rencana Anda ke",
+  "app.components.UpgradePlanModal.text-datoit": "dari Strapi dengan meningkatkan rencana Anda ke",
   "app.components.Users.MagicLink.connect": "Kirim tautan ini ke pengguna agar mereka dapat terhubung.",
   "app.components.Users.ModalCreateBody.block-title.details": "Detail",
   "app.components.Users.ModalCreateBody.block-title.roles": "Peran pengguna",

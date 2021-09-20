@@ -1,6 +1,6 @@
 'use strict';
 
-const { providerFactory } = require('datoit-utils');
+const { providerFactory } = require('strapi-utils');
 const domain = require('./');
 
 /**

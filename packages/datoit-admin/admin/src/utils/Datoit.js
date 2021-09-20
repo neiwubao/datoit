@@ -3,7 +3,7 @@ import FieldApi from './FieldApi';
 import MiddlewareApi from './MiddlewareApi';
 import PluginHandler from './Plugin';
 
-class Strapi {
+class Datoit {
   componentApi = ComponentApi();
 
   fieldApi = FieldApi();
@@ -24,5 +24,5 @@ class Strapi {
 }
 
 export default () => {
-  return new Strapi();
+  return new Datoit();
 };

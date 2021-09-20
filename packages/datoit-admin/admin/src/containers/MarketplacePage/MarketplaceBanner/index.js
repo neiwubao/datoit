@@ -1,8 +1,8 @@
 import React from 'react';
 import { FormattedMessage, useIntl } from 'react-intl';
-import { useGlobalContext } from 'datoit-helper-plugin';
+import { useGlobalContext } from 'strapi-helper-plugin';
 import Wrapper from './Wrapper';
-import LogoStrapi from '../../../assets/images/banner_strapi-rocket.png';
+import LogoStrapi from '../../../assets/images/banner_datoit-rocket.png';
 
 const MarketplaceBanner = () => {
   const { formatMessage } = useIntl();

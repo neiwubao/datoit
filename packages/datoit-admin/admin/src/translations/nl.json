@@ -137,7 +137,7 @@
   "app.components.Onboarding.title": "Aan de slag-video's",
   "app.components.PluginCard.Button.label.download": "Download",
   "app.components.PluginCard.Button.label.install": "Al geïnstalleerd",
-  "app.components.PluginCard.PopUpWarning.install.impossible.autoReload.needed": "De autoReload-functie is vereist. Herstart de server met `strapi develop`",
+  "app.components.PluginCard.PopUpWarning.install.impossible.autoReload.needed": "De autoReload-functie is vereist. Herstart de server met `datoit develop`",
   "app.components.PluginCard.PopUpWarning.install.impossible.confirm": "Ik begrijp het!",
   "app.components.PluginCard.PopUpWarning.install.impossible.environment": "Om veiligheidsredenen kan een plug-in alleen worden gedownload in een ontwikkelomgeving.",
   "app.components.PluginCard.PopUpWarning.install.impossible.title": "Downloaden is niet mogelijk",

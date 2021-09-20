@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import { Button, Padded, Text } from '@buffetjs/core';
-import { Modal } from 'datoit-helper-plugin';
+import { Modal } from 'strapi-helper-plugin';
 import { useIntl } from 'react-intl';
 import { Arrow, Download, Option, Wrapper } from './components';
 
@@ -34,7 +34,7 @@ const UpgradePlanModal = ({ isOpen, onToggle }) => {
               </Text>
               &nbsp;
               <Text as="span" fontSize="md">
-                {formatMessage({ id: 'app.components.UpgradePlanModal.text-strapi' })}
+                {formatMessage({ id: 'app.components.UpgradePlanModal.text-datoit' })}
               </Text>
               <br />
               <Text as="span" fontSize="md" fontWeight="semiBold">
@@ -53,7 +53,7 @@ const UpgradePlanModal = ({ isOpen, onToggle }) => {
       </Wrapper>
 
       <a
-        href="https://strapi.io/pricing"
+        href="https://datoit.io/pricing"
         target="_blank"
         rel="noopener noreferrer"
         style={{ display: 'none' }}

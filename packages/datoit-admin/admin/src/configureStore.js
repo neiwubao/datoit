@@ -10,13 +10,13 @@ import createReducer from './reducers';
 
 const sagaMiddleware = createSagaMiddleware();
 
-export default function configureStore(initialState = {}, reducers, strapi) {
+export default function configureStore(initialState = {}, reducers, datoit) {
   // Create the store with two middlewares
   // 1. sagaMiddleware: Makes redux-sagas work
   // 2. routerMiddleware: Syncs the location/URL path to the state
   const middlewares = [sagaMiddleware];
 
-  strapi.middlewares.middlewares.forEach(middleware => {
+  datoit.middlewares.middlewares.forEach(middleware => {
     middlewares.push(middleware());
   });
 
@@ -32,7 +32,7 @@ export default function configureStore(initialState = {}, reducers, strapi) {
           // TODO Try to remove when `react-router-redux` is out of beta, LOCATION_CHANGE should not be fired more than once after hot reloading
           // Prevent recomputing reducers for `replaceReducer`
           shouldHotReload: false,
-          name: 'Strapi - Dashboard',
+          name: 'Datoit - Dashboard',
         })
       : compose;
   /* eslint-enable */

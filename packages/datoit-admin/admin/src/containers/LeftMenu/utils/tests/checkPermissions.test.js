@@ -1,6 +1,6 @@
 import checkPermissions from '../checkPermissions';
 
-jest.mock('datoit-helper-plugin', () => ({
+jest.mock('strapi-helper-plugin', () => ({
   hasPermissions: () => Promise.resolve(true),
 }));
 

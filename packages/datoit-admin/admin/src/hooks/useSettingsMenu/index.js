@@ -1,5 +1,5 @@
 import { useContext, useEffect, useReducer } from 'react';
-import { useGlobalContext, hasPermissions, UserContext } from 'datoit-helper-plugin';
+import { useGlobalContext, hasPermissions, UserContext } from 'strapi-helper-plugin';
 
 import reducer, { initialState } from './reducer';
 import init from './init';

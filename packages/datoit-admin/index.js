@@ -154,7 +154,7 @@ async function copyPlugin(name, dest) {
 }
 
 async function copyAdmin(dest) {
-  const adminPath = getPkgPath('strapi-admin');
+  const adminPath = getPkgPath('datoit-admin');
 
   // TODO copy ee folders for plugins
   await fs.copy(path.resolve(adminPath, 'ee', 'admin'), path.resolve(dest, 'ee', 'admin'));

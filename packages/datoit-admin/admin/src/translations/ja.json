@@ -27,7 +27,7 @@
   "Settings.application.link-pricing": "すべての価格を見る",
   "Settings.application.link-upgrade": "プロジェクトをアップグレードする",
   "Settings.application.node-version": "Node バージョン",
-  "Settings.application.strapi-version": "Strapi バージョン",
+  "Settings.application.datoit-version": "Strapi バージョン",
   "Settings.application.title": "アプリケーション",
   "Settings.permissions": "管理パネル",
   "Settings.permissions.category": "{category}の権限設定",
